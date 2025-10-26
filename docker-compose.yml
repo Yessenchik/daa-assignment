@@ -1,0 +1,9 @@
+services:
+  daa-assignment:
+    build: .
+    container_name: daa-assignment-app
+    volumes:
+      - ./output:/app/output
+      - ./src/main/resources:/app/src/main/resources
+    environment:
+      - DISPLAY=:99
